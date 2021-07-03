@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-5">
+  
+      <div class="card">
+        <div class="card-body">
+      <!--   
+      <div class="signUp" *ngIf="!isSignedIn">
+        <h2>Sign Up</h2>
+        <label for="emailSignup">Email Address</label>
+        <br/>
+        <input type="text" #emailSignup class="form-control"/>
+        <br/>
+        <label for="passwordSignup">Password</label>
+        <br/>
+        <input type="text" #passwordSignup class="form-control"/>
+        <br/>
+        <button class="btn btn-primary" (click)="onSignup(emailSignup.value, passwordSignup.value)">Sign Up</button>
+      </div>
+      <hr>
+      -->
+      <div class="signIn" *ngIf="!isSignedIn">
+        <h2>Login in to <br/> your account</h2>
+        <label for="email">Email Adress</label>
+        <br/>
+        <input type="text" #email class="form-control"/>
+        <br/>
+        <label for="password">Password</label>
+        <br/>
+        <input type="text" #password class="form-control"/>
+        <br/>
+        <button class="btn btn-primary" (click)="onSignin(email.value, password.value)">Login</button>
+        <p class="or">OR</p>
+        <br/>
+        <button class="btn custom btn-primary" (click)="onSignin(email.value, password.value)">Connect With Google</button>
+        <br/>
+        <p>Don't have an account?<a [routerLink]="['/signup/']" class="link">sign up here</a></p> 
+       
+  
+      </div>
+      
+  
+        
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+  

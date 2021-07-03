@@ -1,0 +1,54 @@
+.btn {
+    margin-top: 20px;
+    margin-right: 30px;   
+    margin-bottom: 30px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+    background-color: #43c0c0;
+    width: 100px;
+    float: right;
+}                                                                       
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: calc(100% - 60px);
+}
+
+.card{
+    margin-top: 100px;
+    margin-left: 320px;
+    margin-bottom: 100px;
+    width: calc(100% - 320px);  
+}
+input, label{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: calc(100% - 60px);
+}
+
+.linkClass {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.linkClass2 {
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.labelClass {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+  }
+  .inputClass {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  }
