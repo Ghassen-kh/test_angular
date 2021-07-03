@@ -61,6 +61,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { VideoDetailsComponent } from './video-details/video-details.component';
+import { VideosListComponent } from './videos-list/videos-list.component';
 
 
 @NgModule({
@@ -71,7 +73,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SigninComponent,
     UploadManagerComponent,
     UploadTaskComponent,
-    DropzoneDirective
+    DropzoneDirective,
+    VideoDetailsComponent,
+    VideosListComponent
   ],
   imports: [
     BrowserModule,

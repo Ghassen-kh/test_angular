@@ -1,10 +1,6 @@
 
-<div class="container2">
-    <p>You are Logged In!</p>
-    <button class="btn btn-primary" (click)="logout()">Logout</button>
-</div>
 
-<ng-template class="modalClass" #content let-modal>
+<ng-template #content let-modal>
   <div class="modal-body">
     <a (click)="modal.dismiss('Cross click')">
       <img src="assets/Icon ionic-md-close.png">
@@ -15,5 +11,32 @@
   </div>
 </ng-template>
 
-<button class="btn btnClass btn-primary" (click)="open(content)">Upload a video</button>
+
+<div class="container-fluid">
+  <div class="row mb-2">
+      <div class="col-sm-4">
+        <div class="input-group">
+          <div class="form-outline">
+            <input placeholder="Cherchez la video" type="search" id="form1" class="form-control" (input)="search($event.target.value)" />
+          </div>
+          <button type="button" class="btn btn-secondary" >
+            <img src="../../assets/Search Icon.png">
+          </button>
+        </div>
+      </div> 
+      <div class="col-sm-4">
+        <div class="container2">
+          <p>You are Logged In!</p>
+          <button class="btn btn-primary" (click)="logout()">Logout</button>
+        </div>
+      </div><!-- /.col -->
+      <div class="col-sm-4">
+        <ol class="breadcrumb float-sm-right">
+          <button class="btn btnClass btn-primary" (click)="open(content)">Upload a video</button>
+        </ol>
+      </div><!-- /.col -->
+  </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+
+<app-videos-list></app-videos-list>
 
