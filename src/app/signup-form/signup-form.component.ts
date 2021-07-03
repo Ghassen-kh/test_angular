@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FireBaseService } from '../services/fire-base.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { FireBaseService } from '../services/fire-base.service';
 })
 export class SignupFormComponent implements OnInit {
   isSignedIn = false;
-  constructor(public firebaseService: FireBaseService){
+  constructor(public firebaseService: FireBaseService, private route: ActivatedRoute, private router: Router){
   }
 
   ngOnInit(){
@@ -23,6 +23,7 @@ export class SignupFormComponent implements OnInit {
     await this.firebaseService.signup(email, password);
     if (this.firebaseService.isLoggedIn){
       this.isSignedIn = true;
+      this.router.navigate(['home']);
     }
   }
 
