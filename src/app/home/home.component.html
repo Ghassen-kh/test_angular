@@ -4,19 +4,16 @@
     <button class="btn btn-primary" (click)="logout()">Logout</button>
 </div>
 
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title"></h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+<ng-template class="modalClass" #content let-modal>
   <div class="modal-body">
+    <a (click)="modal.dismiss('Cross click')">
+      <img src="assets/Icon ionic-md-close.png">
+    </a>
     <div class="container">
       <upload-manager></upload-manager>
     </div>
   </div>
 </ng-template>
 
-<button class="btn btn-primary" (click)="open(content)">Upload a video</button>
+<button class="btn btnClass btn-primary" (click)="open(content)">Upload a video</button>
 

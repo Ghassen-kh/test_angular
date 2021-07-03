@@ -4,13 +4,32 @@
     justify-content: center;
     flex-direction: column;
     font-weight: 200;
-    height: 300px;
-    border: 10px solid #2465f1;
+    width: 300px;
+    height: 250px;
+    border: 10px solid #f0f4f8;
     border-radius: 5px;
     background: rgb(255, 255, 255);
     color: rgb(8, 73, 16);
 }
 
 .dropzone.hovering {
-    border: 10px dashed #2465f1;
+    border: 10px dashed #5e5f61;
 }
+h2{
+    margin-bottom: 10%;
+}
+img{
+    margin-bottom: 10%;
+}
+label{
+    color: blue;
+    cursor: pointer;
+  }
+  
+  label:hover{
+    text-decoration: underline;
+  }
+  
+  #file_input_id{
+    display:none;
+  }

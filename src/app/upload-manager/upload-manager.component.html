@@ -1,11 +1,15 @@
 <div class="dropzone" dropzone (hovered)="toggleHover($event)" (dropped)="onDrop($event)" [class.hovering]="isHovering">
 
-    <h3> Drag & Drop files here</h3>
+    <h2> Upload Your File</h2>
+    <img src="/assets/doc.png" width="60px" height="60px">
 
     <div>
-        <label>
-            <input type="file" (change)="onDrop($event.target.files)">
+        <p>Drag a file here or </p>
+        <label for="file_input_id">
+            browse
+            <input type="file" id="file_input_id" (change)="onDrop($event.target.files)">
         </label>
+        <p>for a file to upload</p>
     </div>
 </div>
 

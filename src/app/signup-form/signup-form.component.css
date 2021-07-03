@@ -5,6 +5,7 @@
     background-color: #43c0c0;
     width: 100px;
     float: right;
+    border-radius: 8%;
 }                                                                       
 h2 {
     text-align: center;
@@ -20,7 +21,9 @@ p {
     margin-top: 100px;
     margin-left: 320px;
     margin-bottom: 100px;
-    width: calc(100% - 320px);  
+    width: calc(100% - 320px);
+    border-radius: 2ch;
+  
 }
 input, label{
     margin-left: 30px;
@@ -51,4 +54,8 @@ input, label{
     position: relative;
     top: -1px;
     *overflow: hidden;
+  }
+  input {
+      border-radius:8ch;
+
   }

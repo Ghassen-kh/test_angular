@@ -39,7 +39,9 @@ p:before, p:after {
 }
 input {
     height: 43px;
+    border-radius:1ch;
 }
+
 
 .btn.custom {
     margin-top: 0px;
@@ -52,4 +54,5 @@ a .link {
     margin-top: 100px;
     margin-left: 100px;
     margin-bottom: 100px;
+    border-radius: 2ch;
 }
