@@ -60,6 +60,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -115,7 +116,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTreeModule,
     MatNativeDateModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [FireBaseService],
   bootstrap: [AppComponent]
