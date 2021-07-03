@@ -27,17 +27,17 @@ export class UploadTaskComponent implements OnInit {
     startUpload() {
         console.log('uploading file', this.file);
 
-        let safeName = this.file.name.replace(/([^a-z0-9.]+)/gi, '');   // file name stripped of spaces and special chars
-        let timestamp = Date.now();                                     // ex: '1598066351161'
+        let safeName = this.file.name.replace(/([^a-z0-9.]+)/gi, '');
+        let timestamp = Date.now();
         const uniqueSafeName = timestamp + '_' + safeName;
-        const path = 'uploads/' + uniqueSafeName;                       // Firebase storage path
-        const ref = this.storage.ref(path);                             // reference to storage bucket
+        const path = 'uploads/' + uniqueSafeName;
+        const ref = this.storage.ref(path);
 
         this.task = this.storage.upload(path, this.file);
-        this.percentage = this.task.percentageChanges();                // progress monitoring
-        this.snapshot = this.task.snapshotChanges().pipe(               // emits a snapshot of the transfer progress every few hundred milliseconds
+        this.percentage = this.task.percentageChanges();
+        this.snapshot = this.task.snapshotChanges().pipe(
             tap(console.log),
-            finalize(async () => {                                      // after the observable completes, get the file's download URL
+            finalize(async () => {
                 this.downloadURL = await ref.getDownloadURL().toPromise();
 
                 this.db.collection('files').doc(uniqueSafeName).set({

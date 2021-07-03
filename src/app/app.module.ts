@@ -9,6 +9,10 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -63,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VideoDetailsComponent } from './video-details/video-details.component';
 import { VideosListComponent } from './videos-list/videos-list.component';
+import { VideoplaylistComponent } from './videoplaylist/videoplaylist.component';
 
 
 @NgModule({
@@ -75,7 +80,8 @@ import { VideosListComponent } from './videos-list/videos-list.component';
     UploadTaskComponent,
     DropzoneDirective,
     VideoDetailsComponent,
-    VideosListComponent
+    VideosListComponent,
+    VideoplaylistComponent
   ],
   imports: [
     BrowserModule,
@@ -121,7 +127,11 @@ import { VideosListComponent } from './videos-list/videos-list.component';
     MatNativeDateModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [FireBaseService],
   bootstrap: [AppComponent]
