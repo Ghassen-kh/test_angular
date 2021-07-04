@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideoProcessingService } from '../videos-list/video-processing.service';
 
 @Component({
     selector: 'upload-manager',
@@ -10,7 +11,7 @@ export class UploadManagerComponent implements OnInit {
     isHovering: boolean;
     files: File[] = [];
 
-    constructor() { }
+    constructor(private videoService: VideoProcessingService) { }
 
     ngOnInit(): void {
     }

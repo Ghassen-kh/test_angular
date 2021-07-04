@@ -62,8 +62,7 @@
               </div>
             </div>
           </ng-template>
-          
-          <button class="btn btnClass btn-primary" (click)="open(content)">Read a video</button>
+          <img style="width: 150px; height: 80px;" [src]="video.thumbnailURL" (click)="open(content)"/>
         </div>
         <div class="card-footer">
           {{ video.originalName }}

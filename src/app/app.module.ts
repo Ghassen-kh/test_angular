@@ -68,6 +68,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VideoDetailsComponent } from './video-details/video-details.component';
 import { VideosListComponent } from './videos-list/videos-list.component';
 import { VideoplaylistComponent } from './videoplaylist/videoplaylist.component';
+import { ThumbnailComponent } from './videos-list/thumbnail/thumbnail.component';
 
 
 @NgModule({
@@ -81,7 +82,8 @@ import { VideoplaylistComponent } from './videoplaylist/videoplaylist.component'
     DropzoneDirective,
     VideoDetailsComponent,
     VideosListComponent,
-    VideoplaylistComponent
+    VideoplaylistComponent,
+    ThumbnailComponent
   ],
   imports: [
     BrowserModule,

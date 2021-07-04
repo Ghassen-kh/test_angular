@@ -26,3 +26,8 @@
 a {
 	margin-left: 108%;
 }
+.thumbnail{
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+}

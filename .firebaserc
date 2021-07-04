@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fir-crud-swag-coder-1f71e"
+  },
+  "targets": {
+    "fir-crud-swag-coder-1f71e": {
+      "hosting": {
+        "crud": [
+          "fir-crud-swag-coder-1f71e"
+        ]
+      }
+    }
+  }
+}

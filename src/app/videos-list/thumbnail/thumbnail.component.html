@@ -1,0 +1,7 @@
+<button mat-button (click)="add()">Click here to add a thumbnail first ADD</button>
+
+<div *ngIf="thumbnailData" class="card" style="width: 18rem;">
+    <div class="card-body">
+        <img style="width: 150px; height: 80px;" [src]="thumbnailData"/>
+    </div>
+  </div>

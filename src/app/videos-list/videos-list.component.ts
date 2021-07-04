@@ -12,7 +12,7 @@ import { VideoService } from '../video.service';
 })
 export class VideosListComponent implements OnInit {
 
-
+  
   videos?: Video[];
   currentVideo?: Video;
   currentIndex = -1;

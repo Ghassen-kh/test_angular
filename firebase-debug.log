@@ -1,0 +1,17 @@
+[debug] [2021-07-04T10:29:21.977Z] ----------------------------------------------------------------------
+[debug] [2021-07-04T10:29:21.979Z] Command:       /home/ghassen/.nvm/versions/node/v12.18.3/bin/node /home/ghassen/.nvm/versions/node/v12.18.3/bin/firebase deploy
+[debug] [2021-07-04T10:29:21.979Z] CLI Version:   9.14.0
+[debug] [2021-07-04T10:29:21.979Z] Platform:      linux
+[debug] [2021-07-04T10:29:21.979Z] Node Version:  v12.18.3
+[debug] [2021-07-04T10:29:21.980Z] Time:          Sun Jul 04 2021 11:29:21 GMT+0100 (Central European Standard Time)
+[debug] [2021-07-04T10:29:21.980Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-04T10:29:21.985Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-04T10:29:21.986Z] > authorizing via signed-in user (ghassen.khalouaoui15@gmail.com)
+[debug] [2021-07-04T10:29:21.986Z] [iam] checking project fir-crud-swag-coder-1f71e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-04T10:29:21.988Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-04T10:29:21.988Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-04T10:29:22.309Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 04 Jul 2021 10:29:22 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T10:29:22.489Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-crud-swag-coder-1f71e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
